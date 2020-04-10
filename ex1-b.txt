@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <math.h>
+int main() {
+	int N;
+	printf("digite o numero de dados:");
+	scanf_s("%d", &N);
+	int i, *vetor;
+	vetor = (int*)malloc(N * sizeof(int));
+	float media=0, soma=0, desviop=0;
+	printf("digite os dados:");
+	for (i = 0; i < N; i++) {
+		scanf_s("%d", &vetor[i]);
+		soma += vetor[i];
+		media += vetor[i];
+
+	}
+	media = media / N;
+	for (i = 0; i < N; i++) {
+		desviop += pow((vetor[i] - media), 2);
+	}
+	N--;
+	desviop = sqrt(desviop /N);
+	printf("soma:%.2f media:%.2f desviop:%.2f", soma, media, desviop);
+
+
+		return 0;
+}
