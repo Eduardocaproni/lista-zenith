@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <math.h>
+#define N 3
+int main() {
+	int i, vetor[N], n;
+	float media=0, soma=0, desviop=0;
+	for (i = 0; i < N; i++) {
+		scanf_s("%d", &vetor[i]);
+		soma += vetor[i];
+		media += vetor[i];
+
+	}
+	media = media / N;
+	for (i = 0; i < N; i++) {
+		desviop += pow((vetor[i] - media), 2);
+	}
+	n = N - 1;
+	desviop = sqrt(desviop /n);
+	printf("soma:%.2f media:%.2f desviop:%.2f", soma, media, desviop);
+
+
+		return 0;
+}
