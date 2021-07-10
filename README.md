@@ -1,2 +1,4 @@
 # lista-zenith
-Programas pedidos na lista 1 do zenitheesc
+Programs asked to train abilities in C, to work in the team Zenith Aerospace-EESC-USP
+
+
